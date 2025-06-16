@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        
+        <form>
+            <div class="mb-3">
+                <label for="length" class="length">Enter the length of the password:</label>
+                <input type="number" id="length" placeholder="Enter password length (e.g., 12)" min="4" max="50">
+            </div>
+        </form>
+        
+        <button id="1" onclick="generator.strongpassword()">🔒 Generate Strong Password</button>
+        <div id="strongpassword"></div>
+        
+        <button id="2" onclick="generator.weakpassword()">⚡ Generate Weak Password</button>
+        <div id="weakpassword"></div>
+        
+        <button id="3" onclick="generator.funnypassword()">😄 Generate Funny Password</button>
+        <div id="funnypassword"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
